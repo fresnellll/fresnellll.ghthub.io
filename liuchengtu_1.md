@@ -1,14 +1,14 @@
-# C 程序的流程图
+# C Program Flowchart
 
 ```mermaid
 flowchart TD
-    A[输入整数 m] --> B[初始化字符数组 a[33] 为 '0']
-    B --> C[定义掩码 mask = 0x00000001]
-    C --> D[循环 i 从 31 到 0]
-    D --> E[提取 m 的最低位并存入 a[i], a[i] = (m & mask) + '0']
-    E --> F[右移 m, m >>= 1]
-    F --> G[循环继续，直到 i = 0]
-    G --> H[循环结束]
-    H --> I[循环 j 从 0 到 31]
-    I --> J[输出 a[j]]
-    J --> K[结束]
+    A[Input integer m] --> B[Initialize character array a[33] to '0']
+    B --> C[Define mask = 0x00000001]
+    C --> D[Loop i from 31 to 0]
+    D --> E[Extract the lowest bit of m and store in a[i], a[i] = (m & mask) + '0']
+    E --> F[Right shift m, m >>= 1]
+    F --> G[Continue loop until i = 0]
+    G --> H[End loop]
+    H --> I[Loop j from 0 to 31]
+    I --> J[Output a[j]]
+    J --> K[End]
